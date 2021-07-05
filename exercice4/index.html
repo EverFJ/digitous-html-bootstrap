@@ -27,7 +27,7 @@
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-2">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
                     </li>
@@ -49,18 +49,52 @@
             </div>
     </nav>
     <div class="container">
-        <div class="row bg-light m-2">
-            <div class="col-8">
+        <div class="row bg-light p-2">
+            <div class="col-8 my-5">
                 <h1>Hi! My name is!</h1>
             </div>
             <div class="col-4">
-                <img src="../img/eminem.jpg" class="figure-img img-fluid rounded-circle" alt="Eminem">
+                <div class="card bg-light">
+                    <img src="../img/eminem.jpg" class="card-img-top rounded-circle" alt="Eminem">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Slim Shady</h4>
+                </div>
             </div>
         </div>
-        <div class="row bg-light justify-content-end">
-            <div class="col-3">
-                <h2>Slim Shady</h2>
+       
+
+        <div class="row m-2 justify-content-center">
+
+            <!-- BUTTON SIGNUP -->
+
+            <div class="col text-center">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#signup">Signup newsletter</button>
             </div>
+
+            <!-- MODAL NEWSLETTER SIGNUP -->
+
+            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Newsletter</h5>
+                        </div>
+                        <div class="modal-body form-inline">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="ex:lala@land.com" name=""
+                                    id="email">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">S'abonner</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="row m-2">
             <div class="col mx-2">
